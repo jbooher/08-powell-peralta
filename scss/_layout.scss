@@ -1,0 +1,8 @@
+@mixin box-border {
+  box-shadow: 0 3px 2px #ccc;
+}
+
+.container {
+  width: 90%;
+  margin: 10px auto 0 auto;
+}

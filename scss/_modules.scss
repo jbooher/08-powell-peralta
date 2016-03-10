@@ -1,0 +1,96 @@
+.heading {
+  width: 100%;
+  color: #fff;
+
+  &--social {
+    float: right;
+    display: none;
+  }
+
+  &--subscribe {
+    float: left;
+  }
+
+  &--icons {
+    float: left;
+  }
+
+  &--divider {
+    float: left;
+  }
+
+  &--icon {
+    float: left;
+  }
+
+  &--nav {
+    clear: both;
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &--button {
+    font-size: .9rem;
+    background-color: #B4292E;
+    margin: 5px 0 5px 0;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    @include box-border;
+
+    &--dash {
+
+    }
+
+    &--name {
+      padding: 0 15px;
+    }
+  }
+
+  &--hero {
+    clear: both;
+    width: 95%;
+    height: 100%;
+    background-image: url(../images/top-image.png);
+    background-size: cover;
+    background-position: left 10%;
+    border: 10px solid #fff;
+    margin: 1em 0 1em 0;
+    @include box-border;
+
+    &--image {
+      width: 90%;
+      padding: 25px 0 25px 1rem;
+    }
+  }
+
+  &--form {
+    width: 20%;
+    margin: 0 auto;
+  }
+}
+
+.content {
+  &--article {
+    background-color: #fff;
+    width: 100%;
+    @include box-border;
+  }
+
+  &--article1 {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  &--article2 {
+    display: none;
+  }
+
+  &--article3 {
+    display: none;
+  }
+}
