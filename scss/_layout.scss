@@ -2,7 +2,21 @@
   box-shadow: 0 3px 2px #ccc;
 }
 
+@mixin article-small {
+  width: 85%;
+  margin: 0 auto;
+}
+
+@mixin skater-small {
+  float: left;
+  width: 98%;
+  height: 190px;
+  border: 5px solid #fff;
+  margin-bottom: 5px;
+  background-size: cover;
+}
+
 .container {
   width: 90%;
-  margin: 10px auto 0 auto;
+  margin: 10px auto;
 }

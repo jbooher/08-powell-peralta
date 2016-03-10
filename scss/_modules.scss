@@ -35,7 +35,7 @@
 
   &--button {
     font-size: .9rem;
-    background-color: #B4292E;
+    background-color: $mainlinks;
     margin: 5px 0 5px 0;
     padding: 20px 20px;
     display: flex;
@@ -59,7 +59,7 @@
     background-size: cover;
     background-position: left 10%;
     border: 10px solid #fff;
-    margin: 1em 0 1em 0;
+    margin: 10px 0 10px 0;
     @include box-border;
 
     &--image {
@@ -70,27 +70,87 @@
 
   &--form {
     width: 20%;
-    margin: 0 auto;
+    margin: 10px auto;
   }
 }
 
 .content {
+
   &--article {
     background-color: #fff;
     width: 100%;
     @include box-border;
+    padding: 5px 0 3px 0;
+    margin: 0 auto;
+  }
+
+  &--header {
+    font-weight: normal;
+  }
+
+  &--date {
+    font-size: .9rem;
+  }
+
+  &--content {
+    color: #686868;
+    line-height: 1.5rem;
+  }
+
+  &--read-more {
+    text-align: center;
+    display: block;
+
+    & a {
+      text-transform: uppercase;
+      color: $mainlinks;
+      font-weight: bold;
+    }
   }
 
   &--article1 {
-    width: 90%;
     margin: 0 auto;
+    @include article-small;
   }
 
   &--article2 {
     display: none;
+    @include article-small;
   }
 
   &--article3 {
+    display: none;
+    @include article-small;
+  }
+
+  &--gallery {
+    margin-top: 10px;
+  }
+
+  &--skater-name {
+    font-size: 3rem;
+    color: #efefef;
+    text-align: center;
+    padding-top: 25px;
+  }
+
+  &--skater1 {
+    background-image: url(../images/sk8er-4.png);
+    @include skater-small;
+  }
+
+  &--skater2 {
+    background-image: url(../images/sk8er-3.png);
+    @include skater-small;
+  }
+
+  &--skater3 {
+    background-image: url(../images/sk8er-2.png);
+    display: none;
+  }
+
+  &--skater4 {
+    background-image: url(../images/sk8er-1.png);
     display: none;
   }
 }

@@ -5,9 +5,12 @@ body {
   background-position: left 10%;
   font-family: "Open-Sans", sans-serif; }
 
+a {
+  text-decoration: none; }
+
 .container {
   width: 90%;
-  margin: 10px auto 0 auto; }
+  margin: 10px auto; }
 
 .heading {
   width: 100%;
@@ -49,26 +52,86 @@ body {
     background-size: cover;
     background-position: left 10%;
     border: 10px solid #fff;
-    margin: 1em 0 1em 0;
+    margin: 10px 0 10px 0;
     box-shadow: 0 3px 2px #ccc; }
     .heading--hero--image {
       width: 90%;
       padding: 25px 0 25px 1rem; }
   .heading--form {
     width: 20%;
-    margin: 0 auto; }
+    margin: 10px auto; }
 
 .content--article {
   background-color: #fff;
   width: 100%;
-  box-shadow: 0 3px 2px #ccc; }
+  box-shadow: 0 3px 2px #ccc;
+  padding: 5px 0 3px 0;
+  margin: 0 auto; }
+
+.content--header {
+  font-weight: normal; }
+
+.content--date {
+  font-size: .9rem; }
+
+.content--content {
+  color: #686868;
+  line-height: 1.5rem; }
+
+.content--read-more {
+  text-align: center;
+  display: block; }
+  .content--read-more a {
+    text-transform: uppercase;
+    color: #B4292E;
+    font-weight: bold; }
 
 .content--article1 {
-  width: 90%;
+  margin: 0 auto;
+  width: 85%;
   margin: 0 auto; }
 
 .content--article2 {
-  display: none; }
+  display: none;
+  width: 85%;
+  margin: 0 auto; }
 
 .content--article3 {
+  display: none;
+  width: 85%;
+  margin: 0 auto; }
+
+.content--gallery {
+  margin-top: 10px; }
+
+.content--skater-name {
+  font-size: 3rem;
+  color: #efefef;
+  text-align: center;
+  padding-top: 25px; }
+
+.content--skater1 {
+  background-image: url(../images/sk8er-4.png);
+  float: left;
+  width: 98%;
+  height: 190px;
+  border: 5px solid #fff;
+  margin-bottom: 5px;
+  background-size: cover; }
+
+.content--skater2 {
+  background-image: url(../images/sk8er-3.png);
+  float: left;
+  width: 98%;
+  height: 190px;
+  border: 5px solid #fff;
+  margin-bottom: 5px;
+  background-size: cover; }
+
+.content--skater3 {
+  background-image: url(../images/sk8er-2.png);
+  display: none; }
+
+.content--skater4 {
+  background-image: url(../images/sk8er-1.png);
   display: none; }
