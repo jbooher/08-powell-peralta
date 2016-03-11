@@ -54,13 +54,14 @@
     height: 100%;
     background-image: url(../images/top-image.png);
     background-size: cover;
-    background-position: 10%;
+    background-repeat: no-repeat;
+    background-color: #1f1f1f;
     border: 10px solid #fff;
     margin: 10px auto;
     @include box-border;
 
     &--image {
-      width: 60%;
+      width: 40%;
       padding: 25px 0 25px 0;
     }
   }
@@ -160,19 +161,21 @@
   &--boards {
     clear: both;
     width: 100%;
-    margin: 10px 0 20px 0;
     background-color: $background;
     @include box-border;
-
-    &-container {
-      width: 90%;
-      margin: 0 auto;
-    }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   &--board {
-    width: 15%;
-    margin: 10px 0 10px 20px;
+    width: 10%;
+    height: 100%;
+    margin: 20px;
+  }
+
+  &--board:last-child, &--board:nth-last-child(2) {
+    display: none;
   }
 }
 
@@ -220,19 +223,19 @@
     height: 3em;
     margin: 10px auto;
     padding-left: 10px;
-    box-shadow: inset 1px 1px 1px 0px #aaa;
+    box-shadow: inset 1px 1px 1px #aaa;
     font-size: .9em;
     text-transform: uppercase;
   }
 
   &--message {
-    -webkit-box-shadow: inset 1px 1px 1px #aaa;
-    -moz-box-shadow: inset 1px 1px 1px #aaa;
-    box-shadow: inset 2px 2px 2px #aaa;
+    -webkit-box-shadow: inset 1px 1px 1px #9f9f9f;
+    -moz-box-shadow: inset 1px 1px 1px #9f9f9f;
+    box-shadow: inset 2px 2px 2px #9f9f9f;
     padding-top: 10px;
     height: 10em;
     overflow: auto;
-    border: 1px solid #aaa;
+    border: 1px solid #ddd;
   }
 
   &--submit {
