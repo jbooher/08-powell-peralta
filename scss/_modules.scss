@@ -50,18 +50,19 @@
 
   &--hero {
     clear: both;
-    width: 96.5%;
+    width: 94%;
     height: 100%;
     background-image: url(../images/top-image.png);
     background-size: cover;
     background-position: left 10%;
-    border: 10px solid #fff;
-    margin: 10px 0;
+    border: 1em solid #fff;
+    margin: 10px auto;
     @include box-border;
 
     &--image {
-      width: 100%;
-      padding: 25px 0 25px .005rem;
+      width: 60%;
+      margin: auto auto;
+      padding: 25px 0 25px 0;
     }
   }
 
@@ -122,8 +123,8 @@
   }
 
   &--gallery {
-    width: 98.5%;
-    margin: 10px 0;
+    width: 100%;
+    margin: 10px auto;
   }
 
   &--skater-name {
