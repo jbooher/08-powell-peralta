@@ -1,10 +1,37 @@
+@mixin social-icon {
+  text-align: center;
+  width: 1.1rem;
+  height: 1.1rem;
+  padding: 5px;
+  color: #fff;
+  margin: 5px 3px;
+}
+
 @mixin box-border {
   box-shadow: 0 3px 2px #ccc;
 }
 
+@mixin article-container-small {
+  background-color: $background;
+  width: 100%;
+  margin: 10px auto;
+}
+
 @mixin article-small {
   width: 85%;
-  margin: 0 auto;
+  margin: 10px auto;
+}
+
+@mixin header-small {
+  margin: 0;
+  padding: 20px 0 0 0;
+  font-weight: normal;
+}
+
+@mixin content-small {
+  color: #686868;
+  line-height: 1.5rem;
+  font-size: .9rem;
 }
 
 @mixin skater-small {
@@ -12,11 +39,31 @@
   width: 98%;
   height: 190px;
   border: 5px solid #fff;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   background-size: cover;
 }
 
 .container {
   width: 90%;
   margin: 10px auto;
+}
+
+.facebook {
+  @include social-icon;
+  background-color: #3E5A9A;
+}
+
+.rss {
+  @include social-icon;
+  background-color: #CB8D2B;
+}
+
+.twitter {
+  @include social-icon;
+  background-color: #688dca;
+}
+
+.youtube {
+  @include social-icon;
+  background-color: #B2382D;
 }
