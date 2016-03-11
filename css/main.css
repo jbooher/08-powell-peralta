@@ -90,17 +90,16 @@ a {
       padding: 0 15px; }
   .heading--hero {
     clear: both;
-    width: 94.5%;
+    width: calc(100% - 20px);
     height: 100%;
     background-image: url(../images/top-image.png);
     background-size: cover;
-    background-position: left 10%;
-    border: 1em solid #fff;
+    background-position: 10%;
+    border: 10px solid #fff;
     margin: 10px auto;
     box-shadow: 0 3px 2px #ccc; }
     .heading--hero--image {
       width: 60%;
-      margin: auto auto;
       padding: 25px 0 25px 0; }
   .heading--form {
     width: 23%;
@@ -169,7 +168,7 @@ a {
 .content--skater1 {
   background-image: url(../images/sk8er-4.png);
   float: left;
-  width: 98.5%;
+  width: calc(100% - 10px);
   height: 190px;
   border: 5px solid #fff;
   margin-bottom: 10px;
@@ -179,7 +178,7 @@ a {
 .content--skater2 {
   background-image: url(../images/sk8er-3.png);
   float: left;
-  width: 98.5%;
+  width: calc(100% - 10px);
   height: 190px;
   border: 5px solid #fff;
   margin-bottom: 10px;
