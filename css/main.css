@@ -111,6 +111,7 @@ a {
   margin: 10px auto 20px auto; }
 
 .content--header {
+  color: #464646;
   margin: 0;
   padding: 20px 0 0 0;
   font-weight: normal; }
@@ -214,10 +215,10 @@ a {
   box-shadow: 0 3px 2px #ccc; }
   .contact--info {
     width: 90%;
-    margin: 10px auto 20px auto;
     width: 85%;
     margin: 10px auto; }
   .contact--header {
+    color: #464646;
     margin: 0;
     padding: 20px 0 0 0;
     font-weight: normal; }
@@ -225,5 +226,42 @@ a {
     color: #686868;
     line-height: 1.5rem;
     font-size: .9rem; }
+  .contact--social {
+    margin: 10px 0;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1); }
   .contact--icon {
     float: left; }
+  .contact--forms {
+    clear: both;
+    margin: 10px 0; }
+  .contact--form {
+    width: 90%;
+    margin: 0 auto; }
+  .contact--name, .contact--email, .contact--message {
+    display: block;
+    width: 90%;
+    height: 3em;
+    margin: 10px auto;
+    padding-left: 10px;
+    box-shadow: inset 1px 1px 1px 0px #aaa;
+    font-size: .9em;
+    text-transform: uppercase; }
+  .contact--message {
+    -webkit-box-shadow: inset 1px 1px 1px #aaa;
+    -moz-box-shadow: inset 1px 1px 1px #aaa;
+    box-shadow: inset 2px 2px 2px #aaa;
+    padding-top: 10px;
+    height: 10em;
+    overflow: auto;
+    border: 1px solid #aaa; }
+  .contact--submit {
+    float: right;
+    font-size: 1.2em;
+    width: 11em;
+    height: 2.3em;
+    margin: 10px .6em 10px 0;
+    background-color: #B4292E;
+    border: none;
+    color: #fff;
+    text-transform: uppercase; }
