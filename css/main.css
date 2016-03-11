@@ -57,7 +57,12 @@ a {
 
 .heading {
   width: 100%;
-  color: #fff; }
+  color: #fff;
+  display: flex;
+  flex-direction: column-reverse; }
+  @media screen and (min-width: 481px) {
+    .heading {
+      flex-direction: column; } }
   .heading--social {
     float: right;
     display: none; }
@@ -78,14 +83,22 @@ a {
     flex-direction: column;
     justify-content: space-between;
     margin: 10px 0 20px 0; }
+    @media screen and (min-width: 481px) {
+      .heading--nav {
+        flex-direction: row;
+        flex-wrap: wrap; } }
   .heading--button {
     font-size: .9rem;
     background-color: #B4292E;
     margin: 5px 0 5px 0;
-    padding: 12px 20px;
+    padding: 30px 20px;
     display: flex;
     justify-content: space-between;
     box-shadow: 0 3px 2px #ccc; }
+    @media screen and (min-width: 481px) {
+      .heading--button {
+        width: 40%;
+        padding: 20px 20px; } }
     .heading--button--name {
       padding: 0 15px; }
   .heading--hero {
@@ -101,10 +114,18 @@ a {
     box-shadow: 0 3px 2px #ccc; }
     .heading--hero--image {
       width: 40%;
-      padding: 25px 0 25px 0; }
+      padding: 50px 0 50px 5px; }
   .heading--form {
-    width: 23%;
-    margin: 10px auto; }
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0; }
+  .heading--radio {
+    margin: 0 5px; }
+
+.content--container {
+  width: 100%;
+  display: flex; }
 
 .content--article {
   width: 85%;
@@ -138,21 +159,32 @@ a {
 
 .content--article1 {
   background-color: #fff;
-  width: 100%;
   margin: 10px auto;
+  width: 100%;
   box-shadow: 0 3px 2px #ccc; }
+  @media screen and (min-width: 481px) {
+    .content--article1 {
+      background-color: #fff;
+      margin: 10px auto;
+      width: 45%; } }
 
 .content--article2 {
   background-color: #fff;
-  width: 100%;
   margin: 10px auto;
+  width: 100%;
   box-shadow: 0 3px 2px #ccc;
   display: none; }
+  @media screen and (min-width: 481px) {
+    .content--article2 {
+      display: block;
+      background-color: #fff;
+      margin: 10px auto;
+      width: 45%; } }
 
 .content--article3 {
   background-color: #fff;
-  width: 100%;
   margin: 10px auto;
+  width: 100%;
   box-shadow: 0 3px 2px #ccc;
   display: none; }
 

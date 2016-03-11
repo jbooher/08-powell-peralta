@@ -1,3 +1,27 @@
+@mixin phone-landscape {
+  @media screen and (min-width: 481px) {
+    @content;
+  }
+}
+
+@mixin tablet-portrait {
+  @media screen and (min-width: 641px) {
+    @content;
+  }
+}
+
+@mixin tablet-landscape {
+  @media screen and (min-width: 961px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 1025px) {
+    @content;
+  }
+}
+
 @mixin social-icon {
   text-align: center;
   width: 1.1rem;
@@ -11,10 +35,19 @@
   box-shadow: 0 3px 2px #ccc;
 }
 
-@mixin article-container-small {
+@mixin article-container {
   background-color: $background;
-  width: 100%;
   margin: 10px auto;
+}
+
+@mixin article-container-small {
+  @include article-container;
+  width: 100%;
+}
+
+@mixin article-container-medium {
+  @include article-container;
+  width: 45%;
 }
 
 @mixin article-small {

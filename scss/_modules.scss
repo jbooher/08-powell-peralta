@@ -1,6 +1,12 @@
 .heading {
   width: 100%;
   color: #fff;
+  display: flex;
+  flex-direction: column-reverse;
+
+  @include phone-landscape {
+    flex-direction: column;
+  }
 
   &--social {
     float: right;
@@ -32,16 +38,26 @@
     flex-direction: column;
     justify-content: space-between;
     margin: 10px 0 20px 0;
+
+    @include phone-landscape {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
   }
 
   &--button {
     font-size: .9rem;
     background-color: $mainlinks;
     margin: 5px 0 5px 0;
-    padding: 12px 20px;
+    padding: 30px 20px;
     display: flex;
     justify-content: space-between;
     @include box-border;
+
+    @include phone-landscape {
+      width: 40%;
+      padding: 20px 20px;
+    }
 
     &--name {
       padding: 0 15px;
@@ -62,17 +78,28 @@
 
     &--image {
       width: 40%;
-      padding: 25px 0 25px 0;
+      padding: 50px 0 50px 5px;
     }
   }
 
   &--form {
-    width: 23%;
-    margin: 10px auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+  }
+
+  &--radio {
+    margin: 0 5px;
   }
 }
 
 .content {
+
+  &--container {
+    width: 100%;
+    display: flex;
+  }
 
   &--article {
     @include article-small;
@@ -108,12 +135,21 @@
   &--article1 {
     @include article-container-small;
     @include box-border;
+
+    @include phone-landscape {
+      @include article-container-medium;
+    }
   }
 
   &--article2 {
     @include article-container-small;
     @include box-border;
     display: none;
+
+    @include phone-landscape {
+      display: block;
+      @include article-container-medium;
+    }
   }
 
   &--article3 {
