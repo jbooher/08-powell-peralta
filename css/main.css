@@ -90,7 +90,7 @@ a {
       padding: 0 15px; }
   .heading--hero {
     clear: both;
-    width: 93%;
+    width: 96.5%;
     height: 100%;
     background-image: url(../images/top-image.png);
     background-size: cover;
@@ -99,8 +99,8 @@ a {
     margin: 10px 0;
     box-shadow: 0 3px 2px #ccc; }
     .heading--hero--image {
-      width: 90%;
-      padding: 25px 0 25px 1rem; }
+      width: 100%;
+      padding: 25px 0 25px .005rem; }
   .heading--form {
     width: 23%;
     margin: 10px auto; }
@@ -156,7 +156,7 @@ a {
   display: none; }
 
 .content--gallery {
-  width: 99%;
+  width: 98.5%;
   margin: 10px 0; }
 
 .content--skater-name {
@@ -168,7 +168,7 @@ a {
 .content--skater1 {
   background-image: url(../images/sk8er-4.png);
   float: left;
-  width: 98%;
+  width: 100%;
   height: 190px;
   border: 5px solid #fff;
   margin-bottom: 10px;
@@ -178,7 +178,7 @@ a {
 .content--skater2 {
   background-image: url(../images/sk8er-3.png);
   float: left;
-  width: 98%;
+  width: 100%;
   height: 190px;
   border: 5px solid #fff;
   margin-bottom: 10px;

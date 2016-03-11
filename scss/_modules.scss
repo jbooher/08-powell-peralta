@@ -50,7 +50,7 @@
 
   &--hero {
     clear: both;
-    width: 93%;
+    width: 96.5%;
     height: 100%;
     background-image: url(../images/top-image.png);
     background-size: cover;
@@ -60,8 +60,8 @@
     @include box-border;
 
     &--image {
-      width: 90%;
-      padding: 25px 0 25px 1rem;
+      width: 100%;
+      padding: 25px 0 25px .005rem;
     }
   }
 
@@ -122,7 +122,7 @@
   }
 
   &--gallery {
-    width: 99%;
+    width: 98.5%;
     margin: 10px 0;
   }
 
