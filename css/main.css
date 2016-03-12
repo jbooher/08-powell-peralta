@@ -97,22 +97,21 @@ a {
     font-size: .9rem;
     background-color: #B4292E;
     margin: 5px 0 5px 0;
-    padding: 30px 20px;
     display: flex;
     justify-content: space-between;
     box-shadow: 0 3px 2px #ccc; }
     @media screen and (min-width: 481px) {
       .heading--button {
         width: 40%;
-        padding: 20px 20px; } }
+        padding: 15px 20px; } }
     @media screen and (min-width: 961px) {
       .heading--button {
         font-size: .4rem;
-        width: 15%;
-        padding: 10px 20px;
-        margin: 5px 2px; } }
-    .heading--button--name {
-      padding: 0 10px; }
+        width: 18%; } }
+    @media screen and (min-width: 1225px) {
+      .heading--button {
+        font-size: .9rem;
+        width: 20%; } }
   .heading--hero {
     clear: both;
     width: calc(100% - 20px);
@@ -338,16 +337,18 @@ a {
     display: block; } }
 
 @media screen and (min-width: 641px) {
+  .content--board {
+    width: 7%; }
   .content--board:nth-last-child(3) {
     display: block; } }
 
-@media screen and (min-width: 641px) {
+@media screen and (min-width: 961px) {
   .content--board {
     width: 7%; }
   .content--board:nth-last-child(2) {
     display: block; } }
 
-@media (min-width: 1025px) {
+@media screen and (min-width: 1120px) {
   .content--board:last-child {
     display: block; } }
 

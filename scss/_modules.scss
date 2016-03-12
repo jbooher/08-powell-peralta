@@ -53,25 +53,23 @@
     font-size: .9rem;
     background-color: $mainlinks;
     margin: 5px 0 5px 0;
-    padding: 30px 20px;
     display: flex;
     justify-content: space-between;
     @include box-border;
 
     @include phone-landscape {
       width: 40%;
-      padding: 20px 20px;
+      padding: 15px 20px;
     }
 
     @include tablet-landscape {
       font-size: .4rem;
-      width: 15%;
-      padding: 10px 20px;
-      margin: 5px 2px;
+      width: 18%;
     }
 
-    &--name {
-      padding: 0 10px;
+    @media screen and (min-width: 1225px) {
+      font-size: .9rem;
+      width: 20%;
     }
   }
 
@@ -309,12 +307,17 @@
   }
 
   @include tablet-portrait {
+
+    &--board {
+      width: 7%;
+    }
+
     &--board:nth-last-child(3) {
       display: block;
     }
   }
 
-  @include tablet-portrait {
+  @include tablet-landscape {
     &--board {
       width: 7%;
     }
@@ -324,7 +327,7 @@
     }
   }
 
-  @include desktop {
+  @media screen and (min-width: 1120px) {
     &--board:last-child {
       display: block;
     }
