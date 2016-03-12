@@ -18,6 +18,9 @@ a {
 .container {
   width: 90%;
   margin: 10px auto; }
+  @media screen and (min-width: 641px) {
+    .container {
+      width: 65%; } }
 
 .facebook {
   text-align: center;
@@ -87,6 +90,9 @@ a {
       .heading--nav {
         flex-direction: row;
         flex-wrap: wrap; } }
+    @media screen and (min-width: 961px) {
+      .heading--nav {
+        margin: 10px 0; } }
   .heading--button {
     font-size: .9rem;
     background-color: #B4292E;
@@ -99,8 +105,14 @@ a {
       .heading--button {
         width: 40%;
         padding: 20px 20px; } }
+    @media screen and (min-width: 961px) {
+      .heading--button {
+        font-size: .4rem;
+        width: 15%;
+        padding: 10px 20px;
+        margin: 5px 2px; } }
     .heading--button--name {
-      padding: 0 15px; }
+      padding: 0 10px; }
   .heading--hero {
     clear: both;
     width: calc(100% - 20px);
@@ -125,7 +137,11 @@ a {
 
 .content--container {
   width: 100%;
-  display: flex; }
+  display: flex;
+  flex-wrap: wrap; }
+  @media screen and (min-width: 481px) {
+    .content--container {
+      justify-content: space-between; } }
 
 .content--article {
   width: 85%;
@@ -166,7 +182,13 @@ a {
     .content--article1 {
       background-color: #fff;
       margin: 10px auto;
-      width: 45%; } }
+      width: 48%;
+      margin: 10px 0; } }
+  @media screen and (min-width: 961px) {
+    .content--article1 {
+      width: 32%;
+      margin: 10px 10px;
+      margin: 10px 0; } }
 
 .content--article2 {
   background-color: #fff;
@@ -179,7 +201,13 @@ a {
       display: block;
       background-color: #fff;
       margin: 10px auto;
-      width: 45%; } }
+      width: 48%;
+      margin: 10px 0; } }
+  @media screen and (min-width: 961px) {
+    .content--article2 {
+      width: 32%;
+      margin: 10px 10px;
+      margin: 10px 0; } }
 
 .content--article3 {
   background-color: #fff;
@@ -187,6 +215,16 @@ a {
   width: 100%;
   box-shadow: 0 3px 2px #ccc;
   display: none; }
+  @media screen and (min-width: 961px) {
+    .content--article3 {
+      background-color: #fff;
+      margin: 10px auto;
+      width: 48%;
+      margin: 10px 0;
+      width: 32%;
+      margin: 10px 10px;
+      margin: 10px 0;
+      display: block; } }
 
 .content--gallery {
   width: 100%;
@@ -198,35 +236,85 @@ a {
   text-align: center;
   padding-top: 25px; }
 
+.content--gallery {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  @media screen and (min-width: 961px) {
+    .content--gallery {
+      display: block; } }
+
+.content--gallery {
+  width: 100%; }
+
 .content--skater1 {
   background-image: url(../images/sk8er-4.png);
-  float: left;
   width: calc(100% - 10px);
   height: 190px;
   border: 5px solid #fff;
   margin-bottom: 10px;
   background-size: cover;
   box-shadow: 0 3px 2px #ccc; }
+  @media screen and (min-width: 481px) {
+    .content--skater1 {
+      width: calc(48% - 10px); } }
+  @media screen and (min-width: 961px) {
+    .content--skater1 {
+      width: calc(32% - 10px);
+      float: left; } }
 
 .content--skater2 {
   background-image: url(../images/sk8er-3.png);
-  float: left;
   width: calc(100% - 10px);
   height: 190px;
   border: 5px solid #fff;
   margin-bottom: 10px;
   background-size: cover;
   box-shadow: 0 3px 2px #ccc; }
+  @media screen and (min-width: 481px) {
+    .content--skater2 {
+      width: calc(48% - 10px); } }
+  @media screen and (min-width: 961px) {
+    .content--skater2 {
+      width: calc(32% - 10px);
+      float: left;
+      margin-left: 1.9%; } }
 
 .content--skater3 {
-  background-image: url(../images/sk8er-2.png);
+  background-image: url(../images/sk8er-1.png);
+  width: calc(100% - 10px);
+  height: 190px;
+  border: 5px solid #fff;
+  margin-bottom: 10px;
+  background-size: cover;
   display: none;
   box-shadow: 0 3px 2px #ccc; }
+  @media screen and (min-width: 481px) {
+    .content--skater3 {
+      display: block;
+      width: calc(48% - 10px);
+      width: calc(100% - 10px); } }
+  @media screen and (min-width: 961px) {
+    .content--skater3 {
+      float: left;
+      width: 65%; } }
 
 .content--skater4 {
-  background-image: url(../images/sk8er-1.png);
+  background-image: url(../images/sk8er-2.png);
+  width: calc(100% - 10px);
+  height: 190px;
+  border: 5px solid #fff;
+  margin-bottom: 10px;
+  background-size: cover;
   display: none;
   box-shadow: 0 3px 2px #ccc; }
+  @media screen and (min-width: 961px) {
+    .content--skater4 {
+      display: block;
+      width: calc(32% - 10px);
+      float: right;
+      margin: 0;
+      height: 400px; } }
 
 .content--boards {
   clear: both;
@@ -242,8 +330,26 @@ a {
   height: 100%;
   margin: 20px; }
 
-.content--board:last-child, .content--board:nth-last-child(2) {
+.content--board:last-child, .content--board:nth-last-child(2), .content--board:nth-last-child(3), .content--board:nth-last-child(4) {
   display: none; }
+
+@media screen and (min-width: 481px) {
+  .content--board:nth-last-child(4) {
+    display: block; } }
+
+@media screen and (min-width: 641px) {
+  .content--board:nth-last-child(3) {
+    display: block; } }
+
+@media screen and (min-width: 641px) {
+  .content--board {
+    width: 7%; }
+  .content--board:nth-last-child(2) {
+    display: block; } }
+
+@media (min-width: 1025px) {
+  .content--board:last-child {
+    display: block; } }
 
 .contact {
   margin: 20px 0;

@@ -43,6 +43,10 @@
       flex-direction: row;
       flex-wrap: wrap;
     }
+
+    @include tablet-landscape {
+      margin: 10px 0;
+    }
   }
 
   &--button {
@@ -59,8 +63,15 @@
       padding: 20px 20px;
     }
 
+    @include tablet-landscape {
+      font-size: .4rem;
+      width: 15%;
+      padding: 10px 20px;
+      margin: 5px 2px;
+    }
+
     &--name {
-      padding: 0 15px;
+      padding: 0 10px;
     }
   }
 
@@ -99,6 +110,11 @@
   &--container {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
+
+    @include phone-landscape {
+      justify-content: space-between;
+    }
   }
 
   &--article {
@@ -139,6 +155,11 @@
     @include phone-landscape {
       @include article-container-medium;
     }
+
+    @include tablet-landscape {
+      @include article-container-large;
+      margin: 10px 0;
+    }
   }
 
   &--article2 {
@@ -150,12 +171,24 @@
       display: block;
       @include article-container-medium;
     }
+
+    @include tablet-landscape {
+      @include article-container-large;
+      margin: 10px 0;
+    }
   }
 
   &--article3 {
     @include article-container-small;
     @include box-border;
     display: none;
+
+    @include tablet-landscape {
+      @include article-container-medium;
+      @include article-container-large;
+      margin: 10px 0;
+      display: block;
+    }
   }
 
   &--gallery {
@@ -170,28 +203,82 @@
     padding-top: 25px;
   }
 
+  &--gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @include tablet-landscape {
+      display: block;
+    }
+  }
+
+  &--gallery {
+    width: 100%;
+  }
+
   &--skater1 {
     background-image: url(../images/sk8er-4.png);
     @include skater-small;
     @include box-border;
+
+    @include phone-landscape {
+      @include skater-medium;
+    }
+
+    @include tablet-landscape {
+      @include skater-large;
+      float: left;
+    }
   }
 
   &--skater2 {
     background-image: url(../images/sk8er-3.png);
     @include skater-small;
     @include box-border;
+
+    @include phone-landscape {
+      @include skater-medium;
+    }
+
+    @include tablet-landscape {
+      @include skater-large;
+      float: left;
+      margin-left: 1.9%;
+    }
   }
 
   &--skater3 {
-    background-image: url(../images/sk8er-2.png);
+    background-image: url(../images/sk8er-1.png);
+    @include skater-small;
     display: none;
     @include box-border;
+
+    @include phone-landscape {
+      display: block;
+      @include skater-medium;
+      width: calc(100% - 10px);
+    }
+
+    @include tablet-landscape {
+      float: left;
+      width: 65%;
+    }
   }
 
   &--skater4 {
-    background-image: url(../images/sk8er-1.png);
+    background-image: url(../images/sk8er-2.png);
+    @include skater-small;
     display: none;
     @include box-border;
+
+    @include tablet-landscape {
+      display: block;
+      width: calc(32% - 10px);
+      float: right;
+      margin: 0;
+      height: 400px;
+    }
   }
 
   &--boards {
@@ -210,8 +297,37 @@
     margin: 20px;
   }
 
-  &--board:last-child, &--board:nth-last-child(2) {
+  &--board:last-child, &--board:nth-last-child(2),
+    &--board:nth-last-child(3), &--board:nth-last-child(4) {
     display: none;
+  }
+
+  @include phone-landscape {
+    &--board:nth-last-child(4) {
+      display: block;
+    }
+  }
+
+  @include tablet-portrait {
+    &--board:nth-last-child(3) {
+      display: block;
+    }
+  }
+
+  @include tablet-portrait {
+    &--board {
+      width: 7%;
+    }
+
+    &--board:nth-last-child(2) {
+      display: block;
+    }
+  }
+
+  @include desktop {
+    &--board:last-child {
+      display: block;
+    }
   }
 }
 

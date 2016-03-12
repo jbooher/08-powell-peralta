@@ -47,7 +47,13 @@
 
 @mixin article-container-medium {
   @include article-container;
-  width: 45%;
+  width: 48%;
+  margin: 10px 0;
+}
+
+@mixin article-container-large {
+  width: 32%;
+  margin: 10px 10px;
 }
 
 @mixin article-small {
@@ -69,7 +75,6 @@
 }
 
 @mixin skater-small {
-  float: left;
   width: calc(100% - 10px);
   height: 190px;
   border: 5px solid #fff;
@@ -77,9 +82,21 @@
   background-size: cover;
 }
 
+@mixin skater-medium {
+  width: calc(48% - 10px)
+}
+
+@mixin skater-large {
+  width: calc(32% - 10px);
+}
+
 .container {
   width: 90%;
   margin: 10px auto;
+
+  @include tablet-portrait {
+    width: 65%;
+  }
 }
 
 .facebook {
