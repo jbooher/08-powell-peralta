@@ -21,6 +21,9 @@ a {
   @media screen and (min-width: 641px) {
     .container {
       width: 65%; } }
+  @media (min-width: 1025px) {
+    .container {
+      width: 60%; } }
 
 .facebook {
   text-align: center;
@@ -112,6 +115,8 @@ a {
         margin: 10px 0; } }
   .heading--button {
     font-size: .9rem;
+    height: 15px;
+    padding: 25px;
     background-color: #B4292E;
     margin: 5px 0 5px 0;
     display: flex;
@@ -124,11 +129,15 @@ a {
     @media screen and (min-width: 961px) {
       .heading--button {
         font-size: .4rem;
-        width: 18%; } }
+        width: 18%;
+        padding: 15px 20px;
+        height: 10px; } }
     @media screen and (min-width: 1225px) {
       .heading--button {
         font-size: .9rem;
-        width: 20%; } }
+        width: 19%;
+        padding: 20px;
+        height: 15px; } }
   .heading--hero {
     clear: both;
     width: calc(100% - 20px);
@@ -244,13 +253,59 @@ a {
 
 .content--gallery {
   width: 100%;
-  margin: 10px auto; }
+  margin: 10px auto;
+  position: relative; }
+
+.content--skateboarders {
+  display: none;
+  box-shadow: 0 3px 2px #ccc; }
+  @media screen and (min-width: 1120px) {
+    .content--skateboarders {
+      display: block;
+      width: 200px;
+      height: 40px;
+      background-color: #B4292E;
+      position: absolute;
+      top: 65px;
+      left: -225px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #fff;
+      padding: 20px 0 0 0;
+      font-weight: bold;
+      font-size: 1.2em; } }
+
+.content--arrow-right {
+  display: none; }
+  @media screen and (min-width: 1120px) {
+    .content--arrow-right {
+      display: block;
+      width: 0;
+      height: 0;
+      border-top: 30px solid transparent;
+      border-bottom: 30px solid transparent;
+      border-left: 20px solid #B4292E;
+      position: absolute;
+      top: 65px;
+      left: -25px; } }
 
 .content--skater-name {
   font-size: 3rem;
   color: #efefef;
   text-align: center;
-  padding-top: 25px; }
+  text-transform: uppercase; }
+  @media screen and (min-width: 481px) {
+    .content--skater-name {
+      font-size: 2.5rem;
+      padding: 15px 0 0 0; } }
+  @media screen and (min-width: 961px) {
+    .content--skater-name {
+      font-size: 2rem;
+      padding: 30px 0 0 0; } }
+  @media screen and (min-width: 1400px) {
+    .content--skater-name {
+      font-size: 2.8rem;
+      padding: 0; } }
 
 .content--gallery {
   display: flex;
@@ -273,7 +328,8 @@ a {
   box-shadow: 0 3px 2px #ccc; }
   @media screen and (min-width: 481px) {
     .content--skater1 {
-      width: calc(48% - 10px); } }
+      width: calc(48% - 10px);
+      background-position: right; } }
   @media screen and (min-width: 961px) {
     .content--skater1 {
       width: calc(32% - 10px);
@@ -309,11 +365,18 @@ a {
     .content--skater3 {
       display: block;
       width: calc(48% - 10px);
-      width: calc(100% - 10px); } }
+      width: calc(100% - 10px); }
+      .content--skater3 .content--skater-name {
+        padding: 50px 0 0 0; } }
   @media screen and (min-width: 961px) {
     .content--skater3 {
       float: left;
-      width: 65%; } }
+      width: 65%; }
+      .content--skater3 .content--skater-name {
+        padding: 50px 0 0 0; } }
+  @media screen and (min-width: 1400px) {
+    .content--skater3 .content--skater-name {
+      padding: 30px 0 0 0; } }
 
 .content--skater4 {
   background-image: url(../images/sk8er-2.png);
@@ -330,7 +393,13 @@ a {
       width: calc(32% - 10px);
       float: right;
       margin: 0;
-      height: 400px; } }
+      height: 400px;
+      background-position: 80%; }
+      .content--skater4 .content--skater-name {
+        padding: 135px 0 0 0; } }
+  @media screen and (min-width: 1400px) {
+    .content--skater4 .content--skater-name {
+      padding: 100px 0 0 0; } }
 
 .content--boards {
   clear: both;

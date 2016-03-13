@@ -97,6 +97,10 @@
   @include tablet-portrait {
     width: 65%;
   }
+
+  @include desktop {
+    width: 60%;
+  }
 }
 
 .facebook {
