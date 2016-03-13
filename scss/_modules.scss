@@ -9,12 +9,22 @@
   }
 
   &--social {
-    float: right;
+    width: 100%;
     display: none;
+
+    @include tablet-landscape {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
   }
 
   &--subscribe {
+    display: block;
     float: left;
+    margin: 0 50px 0 0;
+    text-transform: uppercase;
+    font-size: .9em;
   }
 
   &--icons {
@@ -23,10 +33,20 @@
 
   &--divider {
     float: left;
+    font-size: 1.8em;
+    margin: 8px 5px 0 0;
   }
 
   &--icon {
     float: left;
+    width: 40px;
+    height: 32px;
+    font-size: 1.3em;
+    padding: 8px 0 0 0;
+
+    & i {
+      opacity: .6;
+    }
   }
 
   &--nav {
@@ -338,10 +358,20 @@
   margin: 20px 0;
   background-color: $background;
   @include box-border;
+  display: flex;
+  flex-direction: column;
+
+  @include tablet-landscape {
+    flex-direction: row;
+  }
 
   &--info {
     width: 90%;
     @include article-small;
+
+    @include tablet-landscape {
+      width: 46%;
+    }
   }
 
   &--header {
@@ -365,6 +395,10 @@
   &--forms {
     clear: both;
     margin: 10px 0;
+
+    @include tablet-landscape {
+      width: 45%;
+    }
   }
 
   &--form {
