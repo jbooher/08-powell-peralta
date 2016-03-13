@@ -35,6 +35,14 @@
   box-shadow: 0 3px 2px #ccc;
 }
 
+@mixin box-border-hover {
+  box-shadow: 0 3px 2px $mainlinks;
+}
+
+@mixin nav-hover {
+  box-shadow: 0 3px 2px #222;
+}
+
 @mixin article-container {
   background-color: $background;
   margin: 10px auto;

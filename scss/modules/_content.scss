@@ -1,0 +1,326 @@
+.content {
+
+  &--container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    @include phone-landscape {
+      justify-content: space-between;
+    }
+  }
+
+  &--article {
+    @include article-small;
+    margin: 10px auto 20px auto;
+  }
+
+  &--header {
+    @include header-small;
+  }
+
+  &--date {
+    font-size: .8rem;
+    color: #aaa;
+    font-weight: normal;
+  }
+
+  &--content {
+    @include content-small;
+  }
+
+  &--read-more {
+    text-align: center;
+    display: block;
+    padding: 0 0 10px 0;
+    text-transform: uppercase;
+    color: $mainlinks;
+    font-weight: bold;
+
+    & a {
+      text-transform: uppercase;
+      color: $mainlinks;
+      font-weight: bold;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &--article1 {
+    @include article-container-small;
+    @include box-border;
+
+    @include phone-landscape {
+      @include article-container-medium;
+    }
+
+    @include tablet-landscape {
+      @include article-container-large;
+      margin: 10px 0;
+    }
+  }
+
+  &--article2 {
+    @include article-container-small;
+    @include box-border;
+    display: none;
+
+    @include phone-landscape {
+      display: block;
+      @include article-container-medium;
+    }
+
+    @include tablet-landscape {
+      @include article-container-large;
+      margin: 10px 0;
+    }
+  }
+
+  &--article3 {
+    @include article-container-small;
+    @include box-border;
+    display: none;
+
+    @include tablet-landscape {
+      @include article-container-medium;
+      @include article-container-large;
+      margin: 10px 0;
+      display: block;
+    }
+  }
+
+  &--gallery {
+    width: 100%;
+    margin: 10px auto;
+    position: relative;
+  }
+
+  &--skateboarders {
+    display: none;
+    @include box-border;
+
+    @media screen and (min-width: 1120px) {
+      display: block;
+      width: 200px;
+      height: 40px;
+      background-color: $mainlinks;
+      position: absolute;
+      top: 65px;
+      left: -225px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #fff;
+      padding: 20px 0 0 0;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+  }
+
+  &--arrow-right {
+    display: none;
+
+    @media screen and (min-width: 1120px) {
+      display: block;
+    	width: 0;
+    	height: 0;
+      border-top: 30px solid transparent;
+      border-bottom: 30px solid transparent;
+      border-left: 20px solid $mainlinks;
+      position: absolute;
+      top: 65px;
+      left: -25px;
+    }
+  }
+
+  &--skater-name {
+    font-size: 3rem;
+    color: #efefef;
+    text-align: center;
+    text-transform: uppercase;
+
+    @include phone-landscape {
+      font-size: 2.5rem;
+      padding: 15px 0 0 0;
+    }
+
+    @include tablet-landscape {
+      font-size: 2rem;
+      padding: 30px 0 0 0;
+    }
+
+    @media screen and (min-width: 1400px) {
+      font-size: 2.8rem;
+      padding: 0;
+    }
+  }
+
+  &--gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @include tablet-landscape {
+      display: block;
+    }
+  }
+
+  &--gallery {
+    width: 100%;
+  }
+
+  &--skater1 {
+    background-image: url(../images/sk8er-4.png);
+    @include skater-small;
+    @include box-border;
+
+    &:hover {
+      @include box-border-hover;
+    }
+
+    @include phone-landscape {
+      @include skater-medium;
+      background-position: right;
+    }
+
+    @include tablet-landscape {
+      @include skater-large;
+      float: left;
+    }
+  }
+
+  &--skater2 {
+    background-image: url(../images/sk8er-3.png);
+    @include skater-small;
+    @include box-border;
+
+    &:hover {
+      @include box-border-hover;
+    }
+
+    @include phone-landscape {
+      @include skater-medium;
+    }
+
+    @include tablet-landscape {
+      @include skater-large;
+      float: left;
+      margin-left: 1.9%;
+    }
+  }
+
+  &--skater3 {
+    background-image: url(../images/sk8er-1.png);
+    @include skater-small;
+    display: none;
+    @include box-border;
+
+    &:hover {
+      @include box-border-hover;
+    }
+
+    @include phone-landscape {
+      display: block;
+      @include skater-medium;
+      width: calc(100% - 10px);
+
+      .content--skater-name {
+        padding: 50px 0 0 0;
+      }
+    }
+
+    @include tablet-landscape {
+      float: left;
+      width: 65%;
+
+      .content--skater-name {
+        padding: 50px 0 0 0;
+      }
+    }
+
+    @media screen and (min-width: 1400px) {
+      .content--skater-name {
+        padding: 30px 0 0 0;
+      }
+    }
+  }
+
+  &--skater4 {
+    background-image: url(../images/sk8er-2.png);
+    @include skater-small;
+    display: none;
+    @include box-border;
+
+    &:hover {
+      @include box-border-hover;
+    }
+
+    @include tablet-landscape {
+      display: block;
+      width: calc(32% - 10px);
+      float: right;
+      margin: 0;
+      height: 400px;
+      background-position: 80%;
+
+      .content--skater-name {
+        padding: 135px 0 0 0;
+      }
+    }
+
+    @media screen and (min-width: 1400px) {
+      .content--skater-name {
+        padding: 100px 0 0 0;
+      }
+    }
+  }
+
+  &--boards {
+    clear: both;
+    width: 100%;
+    background-color: $background;
+    @include box-border;
+    display: flex;
+    justify-content: center;
+  }
+
+  &--board {
+    width: 10%;
+    height: 100%;
+    margin: 20px;
+  }
+
+  &--board:last-child, &--board:nth-last-child(2),
+    &--board:nth-last-child(3), &--board:nth-last-child(4) {
+    display: none;
+  }
+
+  @include phone-landscape {
+    &--board:nth-last-child(4) {
+      display: inline-block;
+    }
+  }
+
+  @include tablet-portrait {
+    &--board {
+      width: 7%;
+    }
+
+    &--board:nth-last-child(3) {
+      display: inline-block;
+    }
+  }
+
+  @include tablet-landscape {
+    &--board:nth-last-child(2) {
+      display: inline-block;
+    }
+  }
+
+  @media screen and (min-width: 1120px) {
+    &--board:last-child {
+      display: inline-block;
+    }
+  }
+}

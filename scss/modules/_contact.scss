@@ -1,0 +1,85 @@
+.contact {
+  margin: 20px 0;
+  background-color: $background;
+  @include box-border;
+  display: flex;
+  flex-direction: column;
+
+  @include tablet-landscape {
+    flex-direction: row;
+  }
+
+  &--info {
+    width: 90%;
+    @include article-small;
+
+    @include tablet-landscape {
+      width: 46%;
+    }
+  }
+
+  &--header {
+    @include header-small;
+  }
+
+  &--content {
+    @include content-small;
+  }
+
+  &--social {
+    margin: 10px 0;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+  }
+
+  &--icon {
+    float: left;
+  }
+
+  &--forms {
+    clear: both;
+    margin: 10px 0;
+
+    @include tablet-landscape {
+      width: 45%;
+    }
+  }
+
+  &--form {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  &--name, &--email, &--message {
+    display: block;
+    width: 90%;
+    height: 3em;
+    margin: 10px auto;
+    padding-left: 10px;
+    box-shadow: inset 1px 1px 1px #aaa;
+    font-size: .9em;
+    text-transform: uppercase;
+  }
+
+  &--message {
+    -webkit-box-shadow: inset 1px 1px 1px #9f9f9f;
+    -moz-box-shadow: inset 1px 1px 1px #9f9f9f;
+    box-shadow: inset 2px 2px 2px #9f9f9f;
+    padding-top: 10px;
+    height: 10em;
+    overflow: auto;
+    border: 1px solid #ddd;
+  }
+
+  &--submit {
+    float: right;
+    font-size: 1.2em;
+    width: 11em;
+    height: 2.3em;
+    margin: 10px .6em 10px 0;
+    background-color: $mainlinks;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+  }
+}
